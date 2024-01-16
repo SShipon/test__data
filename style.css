@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main___container{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+.main___container___data{
+    text-align: center;
+}
+.box___container{
+   /* display: flex;
+   justify-content: center; */
+   display: grid;
+   grid-template-columns: repeat();
+}
+.box{
+    width: 33%;
+}

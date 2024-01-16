@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+       .main__box{
+        display: flex;
+        justify-content: center;
+        padding: 20px 20px;
+       }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 10px;
+      }
+
+      
+      .cols {
+        border: 1px solid navy;
+        text-align: center;
+      }
+      .grid_col_8 {
+        grid-column: span 8;
+      }
+      .grid_col_4 {
+        grid-column: span 4;
+      }
+     
+      .grid_col_12 {
+        grid-column: span 12;
+        width: 500px;
+        display: block;
+        margin: auto;
+        justify-content: center;
+      }
+      img{
+        width: 100%;
+        height: 400px;
+      }
+
+  @media only screen and (max-width: 576px) {
+        .main__box{
+        display: flex;
+        justify-content: center;
+        padding: 20px 20px;
+}
+
+        .grid_col_8 {
+          grid-column: span 12;
+        }
+        .grid_col_4 {
+          grid-column: span 12;
+        }
+        .grid_col_3 {
+          grid-column: span 12;
+        }
+        .grid_col_12 {
+          grid-column: span 12;
+         
+        }
+        img{
+        width: 100%;
+        height: 200px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main__section">
+     <div class="main__box">
+             
+      <div class="grid">
+        <div class="cols grid_col_8">
+          <h1>cols-3</h1>
+          <img src="https://images.unsplash.com/photo-1552872673-9b7b99711ebb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8MTkyMCUyMHglMjAxMDgwfGVufDB8fDB8fHww&w=1000&q=80" alt="">
+        </div>
+        <div class="cols grid_col_4">
+          <h1>cols-5</h1>
+          <img src="https://images.unsplash.com/photo-1552872673-9b7b99711ebb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8MTkyMCUyMHglMjAxMDgwfGVufDB8fDB8fHww&w=1000&q=80" alt="">
+        </div>
+     <!--    <div class="cols grid_col_6">
+          <h1>cols-5</h1>
+          <img src="https://images.unsplash.com/photo-1552872673-9b7b99711ebb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8MTkyMCUyMHglMjAxMDgwfGVufDB8fDB8fHww&w=1000&q=80" alt="">
+        </div> -->
+        <div class="cols grid_col_12">
+          <h1>cols-12</h1>
+          <img src="https://images.unsplash.com/photo-1552872673-9b7b99711ebb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8MTkyMCUyMHglMjAxMDgwfGVufDB8fDB8fHww&w=1000&q=80" alt="">
+        </div>
+      </div>
+     </div>
+    </section>
+  </body>
+</html>
